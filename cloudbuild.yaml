@@ -6,4 +6,4 @@ steps:
     - compile
     - exec:java
     - -Dexec.mainClass=org.apache.beam.examples.WordCount
-    - "-Dexec.args=--project=niveustraining --region=asia-south1 --runner=DataflowRunner --gcpTempLocation=//dataflow-apache-quickstart_niveustraining/temp/ --stagingLocation=gs://techtest-2/staging/ --network=aa-psrk-lan-trusted --subnetwork=https://www.googleapis.com/compute/v1/projects/niveustraining/regions/asia-south1/subnetworks/psrk-trusted" 
+    - "-Dexec.args=--project=niveustraining --region=asia-south1 --runner=DataflowRunner --gcpTempLocation=//dataflow-apache-quickstart_niveustraining/temp/ --output=gs://dataflow-apache-quickstart_niveustraining/results/output --network=aa-psrk-lan-trusted --subnetwork=https://www.googleapis.com/compute/v1/projects/niveustraining/regions/asia-south1/subnetworks/psrk-trusted" 
